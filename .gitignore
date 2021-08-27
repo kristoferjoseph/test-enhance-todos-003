@@ -2,3 +2,4 @@ node_modules
 .DS_STORE
 .env
 .npmrc
+src/shared/static.json
