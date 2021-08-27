@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@architect/functions": "^4.0.0",
+    "@begin/data": "^2.0.1",
+    "xss": "^1.0.9"
+  }
+}

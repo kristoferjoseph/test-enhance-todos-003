@@ -1,0 +1,23 @@
+{
+  "name": "enhance-todos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx sandbox"
+  },
+  "keywords": [],
+  "author": "kj <kj@begin.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@architect/eslint-config": "^2.0.0-RC.1",
+    "@architect/functions": "^3.14.1",
+    "@architect/sandbox": "3.4",
+    "@begin/data": "^2.0.1"
+  },
+  "devDependencies": {
+    "@architect/architect": "^8.7.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.2.2"
+  }
+}
