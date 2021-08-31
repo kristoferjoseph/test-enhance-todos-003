@@ -15,6 +15,7 @@ post /logout
 post /todos/delete  # destroy
 post /todos/:id     # update
 post /todos         # create
+get /*
 
 @tables
 data

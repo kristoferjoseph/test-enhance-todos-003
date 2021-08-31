@@ -4,7 +4,7 @@ const { http } = require('@architect/functions')
 const data = require('@begin/data')
 const html = Enhance({
   templates: '@architect/views/templates',
-  modules: '_static/components'
+  modules: 'components'
 })
 const isXHR = require('@architect/shared/is-xhr')
 

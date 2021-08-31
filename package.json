@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx sandbox"
+    "start": "npx sandbox",
+    "start:staging": "NODE_ENV=staging ARC_LOCAL=1 npx sandbox"
   },
   "keywords": [],
   "author": "kj <kj@begin.com>",
   "license": "Apache-2.0",
   "dependencies": {
+    "@architect/asap": "^3.13.8",
     "@architect/eslint-config": "^2.0.0-RC.1",
-    "@architect/functions": "^3.14.1",
+    "@architect/functions": "^3.14.2",
     "@architect/sandbox": "3.4",
     "@begin/data": "^2.0.1"
   },
