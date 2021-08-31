@@ -1,4 +1,4 @@
-import API from '../data/api.js'
+import API from '/data/api.js'
 
 class TodoItem extends HTMLElement {
   constructor () {
