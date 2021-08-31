@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx sandbox",
-    "start:staging": "NODE_ENV=staging ARC_LOCAL=1 npx sandbox"
+    "start": "npx sandbox"
   },
   "keywords": [],
   "author": "kj <kj@begin.com>",

@@ -1,4 +1,4 @@
-import API from '../data/api.js'
+import API from '/data/api.js'
 
 class TodosPage extends HTMLElement {
   constructor () {
