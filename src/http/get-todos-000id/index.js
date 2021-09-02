@@ -1,12 +1,13 @@
 require = require('esm')(module) // eslint-disable-line
 const arc = require('@architect/functions')
 const data = require('@begin/data')
+const auth = require('@architect/shared/auth')
 const Enhance = require('@begin/enhance').default
 const html = Enhance({
   templates: '@architect/views/templates'
 })
 
-exports.handler = arc.http.async(readTodo)
+exports.handler = arc.http.async(auth, readTodo)
 
 async function readTodo (req) {
   const session = req.session || {}

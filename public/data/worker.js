@@ -3,6 +3,7 @@ const CREATE = 'create'
 const UPDATE = 'update'
 const DESTROY = 'destroy'
 const LIST = 'list'
+const ERROR = 'error'
 
 self.onmessage = stateMachine
 
@@ -29,6 +30,10 @@ async function stateMachine ({ data }) {
     catch (err) {
       // RESPOND WITH ERROR
       console.error(err)
+      self.postMessage({
+        type: ERROR,
+        err
+      })
     }
     break
   case UPDATE:
@@ -52,6 +57,10 @@ async function stateMachine ({ data }) {
     }
     catch (err) {
       console.error(err)
+      self.postMessage({
+        type: ERROR,
+        err
+      })
     }
     break
   case DESTROY:
@@ -74,6 +83,10 @@ async function stateMachine ({ data }) {
     catch (err) {
       // RESPOND WITH ERROR
       console.error(err)
+      self.postMessage({
+        type: ERROR,
+        err
+      })
     }
     break
   case LIST:

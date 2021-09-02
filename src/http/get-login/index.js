@@ -11,7 +11,7 @@ const html = Enhance({
 
 exports.handler = arc.http.async(login)
 
-async function login () {
+async function login() {
   return {
     statusCode: 200,
     headers: {

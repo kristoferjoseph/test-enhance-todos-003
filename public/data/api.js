@@ -5,6 +5,7 @@ const CREATE = 'create'
 const UPDATE = 'update'
 const DESTROY = 'destroy'
 const LIST = 'list'
+const ERROR = 'error'
 
 let worker
 export default function API() {
@@ -38,6 +39,9 @@ function mutate(e) {
     break
   case LIST:
     listMutation(result)
+      break
+  case ERROR:
+    errorMutation(result)
     break
   }
 }
@@ -62,6 +66,9 @@ function destroyMutation(result) {
 
 function listMutation(result) {
   store.initialize({ todos: result || [] })
+}
+
+function errorMutation(result) {
 }
 
 
